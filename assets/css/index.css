@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+ }
+
+.logo{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color:whitesmoke;
+}
+html{
+  width: 100vw;
+  height: 45vh;
+ }
+ 
+ /* CSS which you need for blurred box */
+body{
+  background-color: black;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-image:url(assets/images/orange_mountain.jpg);
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased; 
+}
+ 
+.blurred-box{
+  position: relative;
+  width: 500px;
+  height: 350px;
+  top: calc(50% - 175px);
+  left: calc(45% - 125px);
+  
+  /* background: inherit; */
+  /* border-radius: 50px; */
+
+}
+
+.my-box{
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+  z-index: 1;
+}
+
+.my-box > *{
+  display: inline-block;
+  width: 100%;
+}
+
+.my-icon{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-position: center top;
+  background-size: 350px;
+  background-repeat: no-repeat;
+  background-image: url(assets/images/profile_image.jpg);
+}
+ 
+.bio{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: whitesmoke;
+}
+
+.my-name{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+footer{
+  position: relative;
+  clear: both;
+  height: 200px;
+  margin-top: 1000px;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-header {
+    background-color: #4aaaa5;
+  }
+}
